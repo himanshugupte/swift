@@ -1,3 +1,23 @@
+// Simple function declaration
+
+func myFunction1()
+{
+  print("This is a simple function.")
+}
+
+//Another way of writing this function
+
+func myFunction2() -> () {
+  print("This is yet another way of writing the above function!")
+}
+
+// By default, parameters of a function are constants
+
+func whatsTheScore(score: Int) -> () {
+  print("India has \(score) runs on board.")
+}
+
+whatsTheScore(score: 300)
 
 // Functions that return values
 
