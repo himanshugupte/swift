@@ -1,3 +1,3 @@
 # swift
 
-Internal discussion on Swift functions and closures.
+Internal discussion on Swift.
