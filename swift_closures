@@ -1,0 +1,37 @@
+// One way of writing a closure
+
+let myClosure = {
+	print("Hi!")
+}
+
+func performFiveTimes(myClosureParam: () -> ()) {
+	for _ in 1...5 {
+		myClosureParam()
+	}
+}
+
+performFiveTimes(myClosureParam: myClosure)
+
+// Another way of writing above closure
+
+performFiveTimes(myClosureParam: { () -> () in
+	print("Hi!")
+})
+
+// Defining closure input/output
+
+// A function that takes no parameters and returns nothing looks like this:-
+
+func someFunc() -> () {
+	print("I don't return anything.")
+}
+
+// A closure that takes no parameters and returns nothing looks like this:- 
+
+/*
+
+{ () -> () in
+	print("I don't return anything. \m/")
+}
+
+*/
